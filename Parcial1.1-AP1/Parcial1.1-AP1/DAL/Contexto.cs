@@ -1,5 +1,4 @@
-﻿using Parrcial1_AP.BLL;
-using Parrcial1_AP.Entidades;
+﻿using Parcial1._1_AP1.Entidades;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
@@ -11,7 +10,7 @@ namespace Parrcial1_AP.DAL
 {
     public class Contexto : DbContext
     {  
-            public DbSet<Estudiantes> estudiante { get; set; }
+            public DbSet<Evaluacion> evaluar { get; set; }
             public Contexto() : base("ConStr")
             {
 
@@ -19,3 +18,4 @@ namespace Parrcial1_AP.DAL
     }
     
 }
+
